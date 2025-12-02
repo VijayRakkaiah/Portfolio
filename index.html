@@ -3,221 +3,277 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Vijay Rakkaiah — Data Scientist (Transitioning from Mechanical Design)</title>
+  <title>Vijay Rakkaiah — Data Science | Python · ML · Deep Learning · CV</title>
+  <meta name="description" content="Vijay Rakkaiah — Data Science practitioner. Python, Pandas, NumPy, MySQL, ML, DL, OpenCV, Streamlit, Power BI. GUVI certified and 250+ CodeKata solutions." />
 
-  <!-- Google Fonts -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
   <!-- Font Awesome (icons) -->
   <script src="https://kit.fontawesome.com/a2d9b6e3c2.js" crossorigin="anonymous"></script>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <meta name="description" content="Vijay Rakkaiah — Mechanical Design Engineer transitioning into Data Science. Projects in data science, certificates from GUVI, and resume download.">
+  <!-- Main stylesheet (ensure filename matches your repo: assets/css/style.css) -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <meta name="theme-color" content="#106ea6">
 </head>
 <body>
+  <!-- Header -->
   <header class="site-header">
-    <nav class="nav container">
+    <nav class="nav container" aria-label="Main navigation">
       <div class="brand">
-        <img src="assets/img/vijay.jpg" alt="Vijay" class="nav-avatar">
+        <img src="./assets/img/vijay.JPG" alt="Vijay R." class="nav-avatar">
         <div>
-          <h1>Vijay R.</h1>
-          <p class="tagline">Mechanical Design Engineer → Data Scientist (Transition)</p>
+          <h1 style="margin:0;font-size:18px">Vijay R.</h1>
+          <p class="tagline" style="margin:0">Data Science • Python • Machine Learning</p>
         </div>
       </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a role="menuitem" href="#home">Home</a></li>
+        <li role="none"><a role="menuitem" href="#about">About</a></li>
+        <li role="none"><a role="menuitem" href="#projects">Projects</a></li>
+        <li role="none"><a role="menuitem" href="#certificates">Certificates</a></li>
+        <li role="none"><a role="menuitem" href="#resume">Resume</a></li>
+        <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
       </ul>
-      <button class="cta" id="download-resume">Download CV</button>
+
+      <div style="display:flex;gap:10px;align-items:center">
+        <a class="cta" href="./assets/docs/VIJAY_RAKKAIAH_CV.pdf" download>Download CV</a>
+      </div>
     </nav>
   </header>
 
+  <!-- Main -->
   <main>
     <!-- Home -->
-    <section id="home" class="hero container">
+    <section id="home" class="hero container" aria-labelledby="home-heading" style="padding-top:32px;">
       <div class="hero-left">
-        <h2>Hello — I'm <span class="accent">Vijay Rakkaiah</span></h2>
-        <p class="lead">Mechanical Design Engineer with 6+ years in automotive exterior trims, now transitioning into <strong>Data Science</strong>. I build data-driven solutions using Python, machine learning, and practical EDA to solve real problems.</p>
-        <p class="tagline-2">Tagline: Turning mechanical intuition into data-driven decisions.</p>
-        <div class="hero-buttons">
-          <a class="btn" href="#projects">View Projects</a>
-          <a class="btn secondary" href="#contact">Get in Touch</a>
+        <h2 id="home-heading">Hello — I'm <span class="accent">Vijay Rakkaiah</span></h2>
+
+        <p class="lead">
+          I build data-driven solutions using Python, machine learning and deep learning.
+          I have strong hands-on experience with <strong>Python, Pandas, NumPy, MySQL, Matplotlib, Seaborn, Streamlit, Power BI, Machine Learning, Deep Learning, and OpenCV</strong>.
+        </p>
+
+        <p class="lead" style="margin-top:12px;">
+          I have solved <strong>250+ Python problems</strong> on GUVI CodeKata and practice new problems daily.
+          Over the past year I have completed many end-to-end data science projects — from EDA and feature engineering to modeling and deployment.
+        </p>
+
+        <p class="tagline-2" style="margin-top:12px;">Tagline: Turning data into actionable insights and scalable solutions.</p>
+
+        <div class="hero-buttons" style="margin-top:16px;">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn secondary" href="#contact">Contact</a>
         </div>
 
-        <div class="quick-skills">
-          <strong>Key skills:</strong>
+        <div class="quick-skills" style="margin-top:16px;">
+          <strong>Core Tools:</strong>
           <span>Python</span>
-          <span>pandas</span>
+          <span>Pandas</span>
+          <span>NumPy</span>
           <span>scikit-learn</span>
-          <span>Machine Learning</span>
-          <span>Data Visualization</span>
-          <span>CATIA / Mechanical Design</span>
+          <span>PyTorch</span>
+          <span>OpenCV</span>
+          <span>Streamlit</span>
+          <span>Power BI</span>
         </div>
       </div>
 
       <div class="hero-right">
-        <div class="photo-card">
-          <img src="assets/img/vijay.jpg" alt="Vijay photo">
-          <div class="photo-caption">
-            <h3>Vijay R.</h3>
-            <p>Mechanical Design Engineer → Data Scientist</p>
+        <div class="photo-card" aria-hidden="false">
+          <img src="./assets/img/vijay.JPG" alt="Portrait of Vijay" style="width:100%;height:320px;object-fit:cover;border-radius:10px;">
+          <div class="photo-caption" style="padding-top:10px;text-align:left">
+            <h3 style="margin:0">Vijay R.</h3>
+            <p style="margin:0;color:#6b7280">Data Science • Python • ML</p>
+            <div style="margin-top:8px">
+              <a href="https://github.com/VijayRakkaiah" target="_blank" rel="noopener" class="card-links">GitHub</a>
+              <a href="https://www.linkedin.com/in/vijay-rakkaiah-79a8b21b1/" target="_blank" rel="noopener" class="card-links" style="margin-left:10px">LinkedIn</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="container section">
-      <h2>About Me</h2>
-      <div class="about-grid">
+    <section id="about" class="container section" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+
+      <div class="about-grid" style="margin-top:12px;">
         <div class="about-left">
-          <h3>Background</h3>
-          <p>I have 6.5 years of professional experience in automotive exterior trims — concept design, surface convergence, tooling feasibility and working in global car lines. My core design platforms include CATIA V5/V6, Teamcenter and 3D Analyzer.</p>
-          <h3>Transition into Data Science</h3>
-          <p>Driven by a desire to make decisions backed by data, I completed a Data Science program from GUVI. Since then I've built projects in data cleaning, EDA, predictive modelling and model evaluation. I enjoy taking domain knowledge from mechanical engineering and combining it with data tools to derive actionable insights.</p>
+          <h3>Overview</h3>
+          <p>
+            I am a focused Data Science practitioner with a hands-on approach to solving real problems using data.
+            My toolkit includes Python, Pandas, NumPy, SQL (MySQL), visualization libraries (Matplotlib, Seaborn), and practical experience in machine learning and deep learning frameworks.
+          </p>
+
+          <p>
+            I completed the <strong>Advanced Data Science Certification from GUVI</strong>, where I implemented end-to-end workflows — from data cleaning and EDA to model building, evaluation, and deployment.
+            I regularly build projects and dashboards using Streamlit and Power BI to communicate insights effectively.
+          </p>
+
+          <p>
+            Practice & consistency are central to my workflow: I have completed <strong>250+ problem solutions</strong> on GUVI CodeKata and continue to solve new problems daily to improve my coding and algorithmic skills.
+          </p>
         </div>
 
         <div class="about-right">
           <h3>Technical Skills</h3>
-          <ul class="skills-list">
-            <li><strong>Languages:</strong> Python (pandas, numpy), SQL</li>
-            <li><strong>ML & DS:</strong> scikit-learn, XGBoost, model evaluation, feature engineering</li>
-            <li><strong>Visualization:</strong> matplotlib, plotly, seaborn</li>
-            <li><strong>Tools:</strong> Jupyter, Git, GitHub, Colab</li>
-            <li><strong>Mechanical:</strong> CATIA V5/V6, ENOVIA, Teamcenter</li>
+          <ul class="skills-list" style="margin-top:6px">
+            <li><strong>Languages & Libraries:</strong> Python, Pandas, NumPy, scikit-learn, PyTorch</li>
+            <li><strong>Databases:</strong> MySQL</li>
+            <li><strong>Visualization:</strong> Matplotlib, Seaborn, Plotly, Power BI</li>
+            <li><strong>Deployment:</strong> Streamlit, simple Flask apps</li>
+            <li><strong>Computer Vision:</strong> OpenCV, CNN basics</li>
+            <li><strong>Other:</strong> Git, GitHub, Jupyter, Google Colab</li>
           </ul>
 
-          <h3>Soft Skills</h3>
+          <h3 style="margin-top:12px">Strengths</h3>
           <ul>
-            <li>Problem solving using domain knowledge</li>
-            <li>Cross-functional collaboration</li>
-            <li>Documentation & presentation</li>
+            <li>Data cleaning & feature engineering</li>
+            <li>Model selection & evaluation (cross-validation, metrics)</li>
+            <li>Practical model deployment and visualization</li>
+            <li>Consistent problem-solving through daily practice</li>
           </ul>
         </div>
       </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="container section">
-      <h2>Projects</h2>
-      <p class="section-desc">Below are the Data Science projects I completed. Click to view repo or project details.</p>
+    <section id="projects" class="container section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <p class="section-desc">Selected projects demonstrating applied data science, machine learning, deep learning and data visualization. Click the GitHub link to view code and notebooks.</p>
 
-      <div id="projects-grid" class="cards-grid">
-        <!-- Example project card. Duplicate as needed or generate with JS -->
+      <div id="projects-grid" class="cards-grid" style="margin-top:16px;">
+        <!-- Nutrition Paradox -->
         <div class="card">
           <h4>Nutrition Paradox — EDA & Insights</h4>
-          <p class="muted">Exploratory data analysis into obesity and malnutrition datasets; uncovering trends, visualizations and statistical insights.</p>
+          <p class="muted">Exploratory data analysis into obesity and malnutrition datasets to identify trends, correlations, and actionable visual insights.</p>
           <p class="tech">Tech: Python, pandas, seaborn, matplotlib</p>
           <div class="card-links">
-            <a href="#" target="_blank">GitHub</a>
-            <a href="#" target="_blank">Notebook</a>
+            <a href="https://github.com/VijayRakkaiah" target="_blank" rel="noopener">View on GitHub</a>
+            <a href="#" target="_blank" rel="noopener" style="margin-left:8px">Notebook</a>
           </div>
         </div>
 
+        <!-- Brain Tumor -->
         <div class="card">
           <h4>Brain Tumor MRI Classification</h4>
-          <p class="muted">Classification pipeline using CNNs and transfer learning for brain tumor detection (4 classes).</p>
+          <p class="muted">A complete classification pipeline using CNNs and transfer learning to detect brain tumor types from MRI images.</p>
           <p class="tech">Tech: PyTorch, ResNet50, data augmentation</p>
           <div class="card-links">
-            <a href="#" target="_blank">GitHub</a>
-            <a href="#" target="_blank">Notebook</a>
+            <a href="https://github.com/VijayRakkaiah" target="_blank" rel="noopener">View on GitHub</a>
+            <a href="#" target="_blank" rel="noopener" style="margin-left:8px">Notebook</a>
           </div>
         </div>
 
+        <!-- Fake Job -->
         <div class="card">
           <h4>Fake Job Postings Detector</h4>
-          <p class="muted">NLP model to detect fraudulent job postings using text features and classification models.</p>
+          <p class="muted">NLP pipeline using TF-IDF and classical models to detect fraudulent job postings.</p>
           <p class="tech">Tech: Python, scikit-learn, TF-IDF</p>
           <div class="card-links">
-            <a href="#" target="_blank">GitHub</a>
-            <a href="#" target="_blank">Notebook</a>
+            <a href="https://github.com/VijayRakkaiah" target="_blank" rel="noopener">View on GitHub</a>
+            <a href="#" target="_blank" rel="noopener" style="margin-left:8px">Notebook</a>
           </div>
         </div>
 
+        <!-- TripFare -->
         <div class="card">
           <h4>TripFare — Taxi Fare Prediction</h4>
-          <p class="muted">Regression modelling to predict taxi fare based on trip features and external data.</p>
-          <p class="tech">Tech: Python, XGBoost, feature engineering</p>
+          <p class="muted">Regression models with feature engineering to predict taxi fares in urban settings.</p>
+          <p class="tech">Tech: pandas, scikit-learn, XGBoost</p>
           <div class="card-links">
-            <a href="#" target="_blank">GitHub</a>
-            <a href="#" target="_blank">Notebook</a>
+            <a href="https://github.com/VijayRakkaiah" target="_blank" rel="noopener">View on GitHub</a>
+            <a href="#" target="_blank" rel="noopener" style="margin-left:8px">Notebook</a>
           </div>
         </div>
 
+        <!-- Shopper Spectrum -->
         <div class="card">
-          <h4>Shopper Spectrum — Segmentation & Recommendations</h4>
-          <p class="muted">Clustering-based customer segmentation and recommendation pipeline for retail shoppers.</p>
-          <p class="tech">Tech: pandas, scikit-learn</p>
+          <h4>Shopper Spectrum — Customer Segmentation</h4>
+          <p class="muted">Clustering-based segmentation and recommendations to improve marketing targeting and personalization.</p>
+          <p class="tech">Tech: pandas, scikit-learn, clustering</p>
           <div class="card-links">
-            <a href="#" target="_blank">GitHub</a>
-            <a href="#" target="_blank">Notebook</a>
+            <a href="https://github.com/VijayRakkaiah" target="_blank" rel="noopener">View on GitHub</a>
+            <a href="#" target="_blank" rel="noopener" style="margin-left:8px">Notebook</a>
           </div>
         </div>
 
+        <!-- NASA NEO -->
         <div class="card">
           <h4>NASA NEO Analysis</h4>
-          <p class="muted">Analysis of near-earth objects; time-series and risk visualization.</p>
+          <p class="muted">Analysis and visualization of near-earth object (NEO) data; time-series and orbit-risk visualizations.</p>
           <p class="tech">Tech: Python, APIs, visualization</p>
           <div class="card-links">
-            <a href="#" target="_blank">GitHub</a>
-            <a href="#" target="_blank">Notebook</a>
+            <a href="https://github.com/VijayRakkaiah" target="_blank" rel="noopener">View on GitHub</a>
+            <a href="#" target="_blank" rel="noopener" style="margin-left:8px">Notebook</a>
           </div>
         </div>
       </div>
 
-      <p class="hint">Tip: Replace the placeholder links above with your actual GitHub repo URLs. You can add more cards or individual project pages under `/projects`.</p>
+      <p class="hint" style="margin-top:12px;">Tip: Replace the GitHub links above with the direct repository URLs for each project for quick recruiter access.</p>
     </section>
 
     <!-- Certificates -->
-    <section id="certificates" class="container section">
-      <h2>Certificates</h2>
-      <div class="cert-grid">
-        <div class="cert-card">
-          <img src="assets/img/guvi_certificate.png" alt="GUVI Data Science Certificate">
-          <div class="cert-meta">
-            <h4>Advanced Professional Certification in Data Science — GUVI</h4>
-            <p>Completion: GUVI Geek Network (2025)</p>
-            <a href="assets/img/guvi_certificate.png" target="_blank">View Image</a>
-          </div>
+    <section id="certificates" class="container section" aria-labelledby="certificates-heading">
+    <h2 id="certificates-heading">Certificates</h2>
+
+    <div class="cert-grid" style="margin-top:12px;">
+
+        <!-- Correct 1: Advanced Data Science Certification — GUVI -->
+        <div class="cert-card" style="width:100%; padding:16px; border-radius:14px;">
+        <img src="./assets/img/can_certificate.jpg" 
+            alt="Advanced Data Science Certification — GUVI"
+            style="width:220px;height:140px;object-fit:cover;border-radius:10px">
+        <div class="cert-meta">
+            <h4 style="margin-bottom:6px;">Advanced Data Science Certification — GUVI</h4>
+            <p class="small-muted">GUVI Geek Network — 2025</p>
+            <a href="./assets/img/can_certificate.jpg" target="_blank" rel="noopener"
+            style="display:inline-block;margin-top:6px;">View certificate</a>
+        </div>
         </div>
 
-        <div class="cert-card">
-          <img src="assets/img/can_certificate.jpg" alt="GUVI Certificate CAN_38425126">
-          <div class="cert-meta">
-            <h4>GUVI — Master Data Science Program</h4>
-            <p>Completion: April 2025 - June 2025</p>
-            <a href="assets/img/can_certificate.jpg" target="_blank">View Image</a>
-          </div>
+        <!-- Correct 2: Master Data Science Program — GUVI -->
+        <div class="cert-card" style="width:100%; padding:16px; border-radius:14px;">
+        <img src="./assets/img/guvi_certificate.png" 
+            alt="Master Data Science Program — GUVI"
+            style="width:220px;height:140px;object-fit:cover;border-radius:10px">
+        <div class="cert-meta">
+            <h4 style="margin-bottom:6px;">Master Data Science Program — GUVI</h4>
+            <p class="small-muted">April 2025 – June 2025</p>
+            <a href="./assets/img/guvi_certificate.png" target="_blank" rel="noopener"
+            style="display:inline-block;margin-top:6px;">View certificate</a>
         </div>
-      </div>
+        </div>
+
+    </div>
     </section>
 
+
+
     <!-- Resume -->
-    <section id="resume" class="container section">
-      <h2>Resume</h2>
-      <p>You can download my CV (detailed mechanical engineering experience + transition to data science):</p>
-      <a class="btn" href="assets/docs/VIJAY_RAKKAIAH_CV.pdf" download>Download CV (PDF)</a>
-      <p class="small-muted">CV source file referenced in this project. :contentReference[oaicite:1]{index=1}</p>
+    <section id="resume" class="container section" aria-labelledby="resume-heading">
+      <h2 id="resume-heading">Resume</h2>
+      <p>Download a detailed CV highlighting projects, problem-solving practice, and tools.</p>
+      <a class="btn" href="./assets/docs/VIJAY_RAKKAIAH_CV.pdf" download>Download CV (PDF)</a>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="container section">
-      <h2>Contact</h2>
-      <div class="contact-grid">
+    <section id="contact" class="container section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+
+      <div class="contact-grid" style="margin-top:12px;">
         <div>
           <h3>Get in touch</h3>
           <p><strong>Email:</strong> <a href="mailto:vijay.rakkaiah@gmail.com">vijay.rakkaiah@gmail.com</a></p>
-          <p><strong>Phone:</strong> <a href="tel:+919976111659">+91 9976111659</a></p>
-          <p><strong>LinkedIn:</strong> <a href="#" target="_blank">Add your LinkedIn URL</a></p>
-          <p><strong>GitHub:</strong> <a href="#" target="_blank">Add your GitHub URL</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vijay-rakkaiah-79a8b21b1/" target="_blank" rel="noopener">Vijay Rakkaiah</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/VijayRakkaiah" target="_blank" rel="noopener">github.com/VijayRakkaiah</a></p>
         </div>
+
         <div>
-          <h3>Contact form</h3>
-          <form id="contact-form" onsubmit="return handleContact(event)">
+          <h3>Message me</h3>
+          <form id="contact-form" onsubmit="return handleContact(event)" aria-label="Contact form">
             <label>Name<input type="text" name="name" required></label>
             <label>Email<input type="email" name="email" required></label>
             <label>Message<textarea name="message" rows="4" required></textarea></label>
@@ -229,17 +285,23 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>© <span id="year"></span> Vijay Rakkaiah</div>
-      <div class="social">
-        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:vijay.rakkaiah@gmail.com"><i class="fas fa-envelope"></i></a>
+      <div class="social" aria-hidden="false">
+        <a href="https://github.com/VijayRakkaiah" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/vijay-rakkaiah-79a8b21b1/" target="_blank" rel="noopener" style="margin-left:12px"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:vijay.rakkaiah@gmail.com" style="margin-left:12px"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
+  <!-- Main script -->
+  <script src="./assets/js/main.js"></script>
+  <script>
+    // small fallback to set year (also in main.js)
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
 </body>
 </html>
