@@ -1,27 +1,71 @@
-// small interactive helpers
-document.getElementById('year').innerText = new Date().getFullYear();
+/* main.js — Formspree contact form + smooth scrolling + UI helpers */
 
-document.getElementById('download-resume').addEventListener('click',function(){
-  window.location.href = 'assets/docs/VIJAY_RAKKAIAH_CV.pdf';
+/* -----------------------------------------
+   1) Set current year in footer
+----------------------------------------- */
+document.addEventListener("DOMContentLoaded", () => {
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
 });
 
-// Simple contact handler: will open mail client with message (no backend)
-function handleContact(e){
-  e.preventDefault();
-  const form = e.target;
-  const name = form.name.value.trim();
-  const email = form.email.value.trim();
-  const message = form.message.value.trim();
-  const subject = encodeURIComponent(`Portfolio contact from ${name}`);
-  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-  window.location.href = `mailto:vijay.rakkaiah@gmail.com?subject=${subject}&body=${body}`;
-  return false;
-}
+/* -----------------------------------------
+   2) Smooth scrolling for anchor links
+----------------------------------------- */
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener("click", function (e) {
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  });
+});
 
-// Allow smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener('click',function(e){
-    const target = document.querySelector(this.getAttribute('href'));
-    if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+/* -----------------------------------------
+   3) Contact Form — Formspree submission
+----------------------------------------- */
+
+// 🔥 IMPORTANT: Replace this with YOUR Formspree endpoint
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xeoyknpw";
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("contact-status");
+
+  if (!form) return;
+
+  form.action = FORMSPREE_ENDPOINT; // Inject endpoint automatically
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    status.textContent = "Sending…";
+    status.style.color = "#0f4b7a";
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" }
+      });
+
+      if (response.ok) {
+        status.textContent = "Message sent successfully! I will get back to you soon.";
+        status.style.color = "green";
+        form.reset();
+      } else {
+        const data = await response.json();
+        status.textContent =
+          data.error || "Something went wrong. Please try again later.";
+        status.style.color = "red";
+      }
+    } catch (error) {
+      status.textContent = "Network error — please try again later.";
+      status.style.color = "red";
+    }
   });
 });
